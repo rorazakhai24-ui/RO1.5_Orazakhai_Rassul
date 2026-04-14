@@ -1,5 +1,6 @@
 CREATE SCHEMA IF NOT EXISTS nomad_store;
 
+SET search_path TO nomad_store, public;
 CREATE TABLE IF NOT EXISTS nomad_store.users (
     user_id SERIAL PRIMARY KEY,
     username VARCHAR(50) NOT NULL UNIQUE,
